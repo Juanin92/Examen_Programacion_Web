@@ -30,7 +30,7 @@
 
         {% if resultado %}
         <div class="resultado-box-ejercicio1">
-            <p>Nombre del cliente: ${{ resultado.nombre}}</p>
+            <p>Nombre del cliente: {{ resultado.nombre}}</p>
             <p>Total sin descuento: ${{ resultado.total_sin_desc}}</p>
             <p>El descuento es: ${{ resultado.monto_desc}}</p>
             <p>El total a pagar es de: ${{ resultado.total_pagar}}</p>

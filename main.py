@@ -23,7 +23,7 @@ def ejercicio1():
 
         if 18 <= edad <= 30:
             porcentaje_desc = 0.15
-        elif 31 > 30:
+        elif edad > 30:
             porcentaje_desc = 0.25
         else:
             porcentaje_desc = 0.0
@@ -35,7 +35,7 @@ def ejercicio1():
             'nombre': nombre,
             'total_sin_desc': int(total_sin_desc),
             'monto_desc': int(monto_desc),
-            'total_pagar': total_pagar
+            'total_pagar': int(total_pagar)
         }
 
     return render_template('ejercicio1.html', resultado = resultado, nombre=nombre, edad=edad,
