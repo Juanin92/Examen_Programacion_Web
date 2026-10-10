@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Ejercicio 2 - Inicio de Sesión</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='ejercicio2.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
 <body>
 <div class="card-container">
@@ -25,7 +25,7 @@
     </form>
 
     {% if mensaje %}
-    <div class="resultado-box">
+    <div class="resultado-box-ejercicio2">
         <p>{{ mensaje}}</p>
     </div>
     {% endif %}

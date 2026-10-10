@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio 1 - Calculo de Compras</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='ejercicio1.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
 <body>
     <div class="card-container">
@@ -29,7 +29,7 @@
         </form>
 
         {% if resultado %}
-        <div class="resultado-box">
+        <div class="resultado-box-ejercicio1">
             <p>Nombre del cliente: ${{ resultado.nombre}}</p>
             <p>Total sin descuento: ${{ resultado.total_sin_desc}}</p>
             <p>El descuento es: ${{ resultado.monto_desc}}</p>
